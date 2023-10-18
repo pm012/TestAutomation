@@ -21,7 +21,7 @@ public class HomePage {
 	WebElement myAccountToggle;
 	@FindBy(how = How.CSS, using = "a[href*='account/login']")
 	WebElement logInLink;
-	@FindBy(how = How.CSS, using = "a[href*='account/login']")
+	@FindBy(how = How.CSS, using = "a[href*='account/register']")
 	WebElement registerLink;
 
 	// Defining all the user actions (Methods) that can be performed in the Opencart
@@ -56,6 +56,10 @@ public class HomePage {
 	public void clickOnRegisterLink() {
 		registerLink.click();
 		
+	}
+
+	public Boolean verifyPageTitle(){
+		return false;
 	}
 
 }
